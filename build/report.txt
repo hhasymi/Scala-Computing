@@ -1,0 +1,28 @@
+[ 80%] Built target yaml-cpp
+Scanning dependencies of target Scala-Computing
+[ 82%] Building CXX object CMakeFiles/Scala-Computing.dir/main.cpp.o
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp: In function ‘void operator>>(const YAML::Node&, Vec3&)’:
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:25:12: error: no match for ‘operator>>’ (operand types are ‘const YAML::Node’ and ‘float’)
+    node[0] >> v.x;
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:24:6: note: candidate: void operator>>(const YAML::Node&, Vec3&)
+ void operator >> (const YAML::Node& node, Vec3& v) {
+      ^~~~~~~~
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:24:6: note:   no known conversion for argument 2 from ‘float’ to ‘Vec3&’
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:26:12: error: no match for ‘operator>>’ (operand types are ‘const YAML::Node’ and ‘float’)
+    node[1] >> v.y;
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:24:6: note: candidate: void operator>>(const YAML::Node&, Vec3&)
+ void operator >> (const YAML::Node& node, Vec3& v) {
+      ^~~~~~~~
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:24:6: note:   no known conversion for argument 2 from ‘float’ to ‘Vec3&’
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:27:12: error: no match for ‘operator>>’ (operand types are ‘const YAML::Node’ and ‘float’)
+    node[2] >> v.z;
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:24:6: note: candidate: void operator>>(const YAML::Node&, Vec3&)
+ void operator >> (const YAML::Node& node, Vec3& v) {
+      ^~~~~~~~
+/home/hadi/practice/cplusplus/Scala-Computing/main.cpp:24:6: note:   no known conversion for argument 2 from ‘float’ to ‘Vec3&’
+CMakeFiles/Scala-Computing.dir/build.make:62: recipe for target 'CMakeFiles/Scala-Computing.dir/main.cpp.o' failed
+make[2]: *** [CMakeFiles/Scala-Computing.dir/main.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/Scala-Computing.dir/all' failed
+make[1]: *** [CMakeFiles/Scala-Computing.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
